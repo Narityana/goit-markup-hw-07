@@ -1,0 +1,98 @@
+.footer {
+    padding: 60px 0;
+    background-color: var(--grey-darck);
+    &__container {
+        justify-content: flex-start;
+    }
+    &__contacts-list .item+.item {
+        margin-top: 12px;
+    }
+    &__link {
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: var(--white);
+        opacity: 0.6;
+    }
+    &__link--white {
+        color: var(--white);
+    }
+    &__contacts {
+        flex-direction: column;
+        margin-right: 70px;
+        width: 231px;
+    }
+}
+
+.footer-networks {
+    gap: 10px;
+    &__link {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: var(--white);
+        align-items: center;
+        justify-content: center;
+        &:hover,
+        &:focus {
+            background-color: var(--blue);
+            color: var(--white);
+            transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+        }
+    }
+
+    &__icon {
+        display: flex;
+        fill: currentColor;
+    }
+}
+
+.join {
+    flex-direction: column;
+    margin-right: 93px;
+    margin-top: 12px;
+
+    &__title {
+        @extend %footer-title;
+    }
+}
+.subscribe {
+    flex-direction: column;
+    margin-top: 12px;
+    &__title {
+        @extend %footer-title;
+    }
+    &__form {
+        display: flex;
+        align-content: center;
+    }
+    &__button {
+        @extend %btn;
+        display: flex;
+        align-items: center;
+        margin-left: 12px;
+        padding: 10px 28px;
+        line-height: 1.2;    
+    }
+    &__icon {
+        margin-left: 10px;
+    }
+    &__input {
+        padding: 15px;
+        font-size: 16px;
+        line-height: 1.25;
+        width: 358px;
+        height: 50px;
+        color: var(--white);
+        background-color: var(--grey-darck);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        outline: none;
+    }
+    &__input::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}

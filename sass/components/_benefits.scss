@@ -1,0 +1,33 @@
+.benefits {
+    padding-top: 94px;
+
+    &__list {
+        gap: 30px;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+
+    &__item {
+        width: calc((100% - 90px) / 4);
+    }
+
+    &__name {
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color: var(--secondblack);
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+    }
+
+    &__conteiner {
+        display: flex;
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+        background-color: var(--secondwhite);
+        margin-bottom: 30px;
+        padding: 25px 100px;
+    }
+}

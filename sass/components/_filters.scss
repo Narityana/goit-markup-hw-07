@@ -1,0 +1,21 @@
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+    &__button {
+        @extend %btn;
+        min-width: auto;
+        padding: 6px 22px;
+        background-color: var(--secondwhite);
+        line-height: 1.8;
+        color: var(--secondblack);
+        &:hover,
+        &:focus {
+            color: var(--white);
+            background-color: var(--blue);
+            transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
+        }
+    }
+}
+

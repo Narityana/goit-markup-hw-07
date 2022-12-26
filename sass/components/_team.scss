@@ -1,0 +1,65 @@
+
+.team {
+    background-color: var(--secondwhite);
+    &__item {
+        background-color: #fff;
+        box-shadow: 0 2px 5px;
+        width: calc((100% - 90px) / 4);
+    }
+
+    &__title {
+        @extend %h2;
+    }
+
+    &__name {
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: var(--secondblack);
+        text-align: center;
+    }
+
+    &__position {
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: var(--grey-light);
+        text-align: center;
+    }
+
+    &__list {
+        gap: 30px;
+    }
+
+    &__employee {
+        padding: 30px 32px;
+    }
+}
+
+.networks {
+    gap: 10px;
+    &__link {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        color: var(--networks);
+        background-color: var(--white);
+        margin-top: 16px;
+        align-items: center;
+        justify-content: center;
+        &:hover,
+        &:focus {
+            background-color: var(--blue);
+            color: var(--white);
+            transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+        }
+    }
+    
+    &__icon {
+        display: flex;
+        fill: currentColor;
+    }
+}
